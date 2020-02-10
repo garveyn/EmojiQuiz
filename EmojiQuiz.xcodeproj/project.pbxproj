@@ -15,6 +15,7 @@
 		E90B1AF423F096D100EB680C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90B1AF223F096D100EB680C /* LaunchScreen.storyboard */; };
 		E90B1AFF23F096D100EB680C /* EmojiQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B1AFE23F096D100EB680C /* EmojiQuizTests.swift */; };
 		E90B1B0A23F096D100EB680C /* EmojiQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B1B0923F096D100EB680C /* EmojiQuizUITests.swift */; };
+		E90BE32323F1BE70003E113E /* EndScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90BE32223F1BE70003E113E /* EndScreenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E90B1B0523F096D100EB680C /* EmojiQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmojiQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90B1B0923F096D100EB680C /* EmojiQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiQuizUITests.swift; sourceTree = "<group>"; };
 		E90B1B0B23F096D100EB680C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90BE32223F1BE70003E113E /* EndScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScreenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				E90B1AF023F096D100EB680C /* Assets.xcassets */,
 				E90B1AF223F096D100EB680C /* LaunchScreen.storyboard */,
 				E90B1AF523F096D100EB680C /* Info.plist */,
+				E90BE32223F1BE70003E113E /* EndScreenController.swift */,
 			);
 			path = EmojiQuiz;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				E90B1AEC23F096D000EB680C /* SecondViewController.swift in Sources */,
 				E90B1AE823F096D000EB680C /* AppDelegate.swift in Sources */,
 				E90B1AEA23F096D000EB680C /* QuizController.swift in Sources */,
+				E90BE32323F1BE70003E113E /* EndScreenController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

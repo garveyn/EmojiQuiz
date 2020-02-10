@@ -31,6 +31,7 @@ class QuizController: UIViewController {
     @IBAction func letterGuessed(_ sender: UIButton) {
         let color: UIColor?
         var correct: Bool = false
+        var solved: Bool = true
         
         if let guess = sender.currentTitle?.first {
             guessPool.append(guess)
@@ -43,11 +44,15 @@ class QuizController: UIViewController {
                 } else if guessPool.contains(char) {
                     return char
                 } else {
+                    solved = false
                     return "_"
                 }
             })
             if correct {
                 color = UIColor(named: "Correct")
+                if solved {
+                    questionSolved()
+                }
             } else {
                 color = UIColor(named: "Incorrect")
                 lives -= 1
@@ -71,6 +76,12 @@ class QuizController: UIViewController {
     
     func outOfLives() {
         print("You Lose!")
+        performSegue(withIdentifier: "lose", sender: nil)
+    }
+    
+    func questionSolved() {
+        print("You Win!")
+        
     }
     
     override func viewDidLoad() {
