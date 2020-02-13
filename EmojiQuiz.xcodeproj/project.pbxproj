@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E906058E23F5B5DD00D03C1C /* Movies.plist in Resources */ = {isa = PBXBuildFile; fileRef = E906058D23F5B5DD00D03C1C /* Movies.plist */; };
+		E906059023F5C09D00D03C1C /* Flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = E906058F23F5C09D00D03C1C /* Flags.plist */; };
 		E90B1AE823F096D000EB680C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B1AE723F096D000EB680C /* AppDelegate.swift */; };
 		E90B1AEA23F096D000EB680C /* QuizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B1AE923F096D000EB680C /* QuizController.swift */; };
 		E90B1AEC23F096D000EB680C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B1AEB23F096D000EB680C /* SecondViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E906058D23F5B5DD00D03C1C /* Movies.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Movies.plist; sourceTree = "<group>"; };
+		E906058F23F5C09D00D03C1C /* Flags.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Flags.plist; sourceTree = "<group>"; };
 		E90B1AE423F096D000EB680C /* EmojiQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90B1AE723F096D000EB680C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E90B1AE923F096D000EB680C /* QuizController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizController.swift; sourceTree = "<group>"; };
@@ -108,7 +112,9 @@
 				E90B1AED23F096D000EB680C /* Main.storyboard */,
 				E90B1AF023F096D100EB680C /* Assets.xcassets */,
 				E90B1AF223F096D100EB680C /* LaunchScreen.storyboard */,
+				E906058D23F5B5DD00D03C1C /* Movies.plist */,
 				E90B1AF523F096D100EB680C /* Info.plist */,
+				E906058F23F5C09D00D03C1C /* Flags.plist */,
 			);
 			path = EmojiQuiz;
 			sourceTree = "<group>";
@@ -247,6 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E90B1AF423F096D100EB680C /* LaunchScreen.storyboard in Resources */,
+				E906058E23F5B5DD00D03C1C /* Movies.plist in Resources */,
+				E906059023F5C09D00D03C1C /* Flags.plist in Resources */,
 				E90B1AF123F096D100EB680C /* Assets.xcassets in Resources */,
 				E90B1AEF23F096D000EB680C /* Main.storyboard in Resources */,
 			);

@@ -18,7 +18,7 @@ class QuizSetupController: UIViewController {
     @IBOutlet weak var questionNumLabel: UILabel!
     @IBOutlet weak var questionNumStepper: UIStepper!
     @IBAction func questionNumChanged(_ sender: UIStepper) {
-        
+        questionNumLabel.text = String(Int(sender.value))
     }
     
     override func viewDidLoad() {
@@ -26,6 +26,9 @@ class QuizSetupController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        segue.destination
+        if let controller = segue.destination as? QuizController {
+            controller.category = category.titleForSegment(at: category.selectedSegmentIndex) ?? "Flags"
+            controller.totalQuestions = Int(questionNumStepper.value)
+        }
     }
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>U N I T E D   S T A T E S</key>
+	<string>🇺🇸</string>
+	<key>U N I T E D   K I N G D O M</key>
+	<string>🇬🇧</string>
+	<key>J A P A N</key>
+	<string>🇯🇵</string>
+	<key>G E O R G I A</key>
+	<string>🇬🇪</string>
+	<key>N E P A L</key>
+	<string>🇳🇵</string>
+	<key>P A N A M A</key>
+	<string>🇵🇦</string>
+	<key>E S T O N I A</key>
+	<string>🇪🇪</string>
+	<key>A N G O L A</key>
+	<string>🇦🇴</string>
+	<key>CYPRUS</key>
+	<string>🇨🇾</string>
+	<key>L A T V I A</key>
+	<string>🇱🇻</string>
+</dict>
+</plist>

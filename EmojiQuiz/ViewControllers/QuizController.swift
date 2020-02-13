@@ -14,9 +14,12 @@ class QuizController: UIViewController {
      */
     
     let LIVES_TEXT: String = "Lives:"
+    let QUESTIONS_TEXT: String = "Question #"
     let INITIAL_LIVES: Int = 3
     
     var category: String = ""
+    var totalQuestions: Int = 0
+    var questions: Dictionary<String, String> = [:]
     
     var secretWord: String = "C H I C K E N"
     var guessPool: [Character] = []
@@ -83,12 +86,28 @@ class QuizController: UIViewController {
     
     func questionSolved() {
         print("You Win!")
+        // TODO: Implement sounds
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = category
+        qNumbLabel.text = "\(QUESTIONS_TEXT)1 of \(totalQuestions)"
+        
+        // Load Questions | Sourced from: https://gist.github.com/db42/e7a009dd864c7d40fd2a750e3ae24155
+        if let path = Bundle.main.path(forResource: category, ofType: "plist"),
+            let xml = FileManager.default.contents(atPath: path) {
+            do {
+                let plist = try PropertyListSerialization.propertyList(from: xml, options: PropertyListSerialization.ReadOptions(), format: nil)
+                questions = plist as? Dictionary<String, String> ?? ["oops!": "Something went wrong!"]
+            } catch {
+                
+            }
+        }
+        
+        secretWord = questions.
     }
 
 
