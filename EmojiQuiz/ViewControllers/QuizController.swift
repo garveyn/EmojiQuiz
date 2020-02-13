@@ -16,6 +16,8 @@ class QuizController: UIViewController {
     let LIVES_TEXT: String = "Lives:"
     let INITIAL_LIVES: Int = 3
     
+    var category: String = ""
+    
     var secretWord: String = "C H I C K E N"
     var guessPool: [Character] = []
     var lives: Int = 3

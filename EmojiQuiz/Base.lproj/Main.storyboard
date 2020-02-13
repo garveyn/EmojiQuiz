@@ -306,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1659.4202898550725" y="-320.08928571428572"/>
+            <point key="canvasLocation" x="2407" y="-320"/>
         </scene>
         <!--End Screen Controller-->
         <scene sceneID="NNY-Jm-rPU">
@@ -368,7 +368,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdc-AS-o6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2560.8695652173915" y="-320.08928571428572"/>
+            <point key="canvasLocation" x="3226" y="-320"/>
         </scene>
         <!--High Scores-->
         <scene sceneID="wg7-f3-ORb">
@@ -385,6 +385,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Quiz Setup Controller-->
+        <scene sceneID="C8m-54-HDX">
+            <objects>
+                <viewController id="ZPB-tM-eGa" customClass="QuizSetupController" customModule="EmojiQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hcl-ne-HNP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="H98-sz-BLV">
+                                <rect key="frame" x="160" y="337" width="94" height="29"/>
+                                <connections>
+                                    <action selector="questionNumChanged:" destination="ZPB-tM-eGa" eventType="valueChanged" id="nhH-9U-9At"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Y2-qU-57o">
+                                <rect key="frame" x="201.66666666666666" y="301.33333333333331" width="10.666666666666657" height="20.666666666666686"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Questions:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1l-Fy-oyG">
+                                <rect key="frame" x="75" y="254.00000000000003" width="264" height="33.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yq2-xl-gGh">
+                                <rect key="frame" x="8" y="95" width="398" height="69.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="58"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eeO-Fi-lCU">
+                                <rect key="frame" x="149.66666666666666" y="183" width="114.99999999999997" height="29"/>
+                                <segments>
+                                    <segment title="Flags"/>
+                                    <segment title="Movies"/>
+                                </segments>
+                                <connections>
+                                    <action selector="categoryChanged:" destination="ZPB-tM-eGa" eventType="valueChanged" id="10i-hP-RZj"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQ6-v4-sdD">
+                                <rect key="frame" x="185" y="393.66666666666669" width="44" height="30"/>
+                                <state key="normal" title="Begin!"/>
+                                <connections>
+                                    <segue destination="9pv-A4-QxB" kind="show" id="FiY-Mc-p8I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H98-sz-BLV" firstAttribute="top" secondItem="4Y2-qU-57o" secondAttribute="bottom" constant="15" id="3tc-5P-jfe"/>
+                            <constraint firstItem="eeO-Fi-lCU" firstAttribute="centerX" secondItem="oBH-sD-uxZ" secondAttribute="centerX" id="5d4-9L-pCX"/>
+                            <constraint firstItem="zQ6-v4-sdD" firstAttribute="top" secondItem="H98-sz-BLV" secondAttribute="bottom" constant="27.5" id="6ba-OB-Lg4"/>
+                            <constraint firstItem="G1l-Fy-oyG" firstAttribute="centerX" secondItem="oBH-sD-uxZ" secondAttribute="centerX" id="Coo-gI-FsB"/>
+                            <constraint firstItem="G1l-Fy-oyG" firstAttribute="top" secondItem="eeO-Fi-lCU" secondAttribute="bottom" constant="43" id="DPp-An-ZVE"/>
+                            <constraint firstItem="4Y2-qU-57o" firstAttribute="top" secondItem="G1l-Fy-oyG" secondAttribute="bottom" constant="14" id="Ecj-Ds-Etq"/>
+                            <constraint firstItem="Yq2-xl-gGh" firstAttribute="top" secondItem="oBH-sD-uxZ" secondAttribute="top" constant="7" id="Emd-Lr-eaO"/>
+                            <constraint firstItem="oBH-sD-uxZ" firstAttribute="trailing" secondItem="Yq2-xl-gGh" secondAttribute="trailing" constant="8" id="Ioj-Z1-pJh"/>
+                            <constraint firstItem="4Y2-qU-57o" firstAttribute="centerX" secondItem="oBH-sD-uxZ" secondAttribute="centerX" id="NfA-tN-Jbk"/>
+                            <constraint firstItem="H98-sz-BLV" firstAttribute="centerX" secondItem="oBH-sD-uxZ" secondAttribute="centerX" id="dgU-92-oIk"/>
+                            <constraint firstItem="eeO-Fi-lCU" firstAttribute="top" secondItem="Yq2-xl-gGh" secondAttribute="bottom" constant="18.333333333333314" id="gY7-wm-A33"/>
+                            <constraint firstItem="zQ6-v4-sdD" firstAttribute="centerX" secondItem="oBH-sD-uxZ" secondAttribute="centerX" id="pNH-oh-6dq"/>
+                            <constraint firstItem="Yq2-xl-gGh" firstAttribute="leading" secondItem="oBH-sD-uxZ" secondAttribute="leading" constant="8" id="q27-aX-PiH"/>
+                            <constraint firstItem="Yq2-xl-gGh" firstAttribute="centerX" secondItem="oBH-sD-uxZ" secondAttribute="centerX" id="rQt-ah-1WY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oBH-sD-uxZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bug-ld-yil"/>
+                    <connections>
+                        <outlet property="category" destination="eeO-Fi-lCU" id="ryi-uD-dKt"/>
+                        <outlet property="questionNumLabel" destination="4Y2-qU-57o" id="Dnj-fo-Tla"/>
+                        <outlet property="questionNumStepper" destination="H98-sz-BLV" id="I4c-Cd-DTW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lEF-wk-AAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1537.68115942029" y="-320.08928571428572"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -416,7 +496,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="yZH-Gg-jtU"/>
+                        <segue destination="ZPB-tM-eGa" kind="relationship" relationship="rootViewController" id="p37-rt-3ok"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8D-Yi-2st" userLabel="First Responder" sceneMemberID="firstResponder"/>
