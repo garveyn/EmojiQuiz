@@ -19,6 +19,7 @@
 		E90B1B0A23F096D100EB680C /* EmojiQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B1B0923F096D100EB680C /* EmojiQuizUITests.swift */; };
 		E90BE32323F1BE70003E113E /* EndScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90BE32223F1BE70003E113E /* EndScreenController.swift */; };
 		E91DAE6B23F4C84800017B64 /* QuizSetupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DAE6A23F4C84800017B64 /* QuizSetupController.swift */; };
+		E9B8B9AA23F60EBE00EA5BC0 /* ScoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8B9A923F60EBE00EA5BC0 /* ScoreConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E90B1B0B23F096D100EB680C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90BE32223F1BE70003E113E /* EndScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScreenController.swift; sourceTree = "<group>"; };
 		E91DAE6A23F4C84800017B64 /* QuizSetupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSetupController.swift; sourceTree = "<group>"; };
+		E9B8B9A923F60EBE00EA5BC0 /* ScoreConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +111,13 @@
 			children = (
 				E90B1AE723F096D000EB680C /* AppDelegate.swift */,
 				E91DAE6923F4C80400017B64 /* ViewControllers */,
+				E9B8B9AB23F60EC900EA5BC0 /* Constants */,
 				E90B1AED23F096D000EB680C /* Main.storyboard */,
 				E90B1AF023F096D100EB680C /* Assets.xcassets */,
 				E90B1AF223F096D100EB680C /* LaunchScreen.storyboard */,
 				E906058D23F5B5DD00D03C1C /* Movies.plist */,
-				E90B1AF523F096D100EB680C /* Info.plist */,
 				E906058F23F5C09D00D03C1C /* Flags.plist */,
+				E90B1AF523F096D100EB680C /* Info.plist */,
 			);
 			path = EmojiQuiz;
 			sourceTree = "<group>";
@@ -146,6 +149,14 @@
 				E91DAE6A23F4C84800017B64 /* QuizSetupController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E9B8B9AB23F60EC900EA5BC0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E9B8B9A923F60EBE00EA5BC0 /* ScoreConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +296,7 @@
 				E90B1AEC23F096D000EB680C /* SecondViewController.swift in Sources */,
 				E90B1AE823F096D000EB680C /* AppDelegate.swift in Sources */,
 				E90B1AEA23F096D000EB680C /* QuizController.swift in Sources */,
+				E9B8B9AA23F60EBE00EA5BC0 /* ScoreConstants.swift in Sources */,
 				E90BE32323F1BE70003E113E /* EndScreenController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

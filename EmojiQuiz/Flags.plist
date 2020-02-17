@@ -2,25 +2,31 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>U N I T E D   S T A T E S</key>
-	<string>🇺🇸</string>
-	<key>U N I T E D   K I N G D O M</key>
-	<string>🇬🇧</string>
-	<key>J A P A N</key>
-	<string>🇯🇵</string>
-	<key>G E O R G I A</key>
-	<string>🇬🇪</string>
-	<key>N E P A L</key>
-	<string>🇳🇵</string>
-	<key>P A N A M A</key>
-	<string>🇵🇦</string>
-	<key>E S T O N I A</key>
-	<string>🇪🇪</string>
-	<key>A N G O L A</key>
-	<string>🇦🇴</string>
-	<key>CYPRUS</key>
-	<string>🇨🇾</string>
-	<key>L A T V I A</key>
-	<string>🇱🇻</string>
+	<key>Questions</key>
+	<array>
+		<string>🇺🇸</string>
+		<string>🇬🇧</string>
+		<string>🇯🇵</string>
+		<string>🇬🇪</string>
+		<string>🇳🇵</string>
+		<string>🇵🇦</string>
+		<string>🇪🇪</string>
+		<string>🇦🇴</string>
+		<string>🇨🇾</string>
+		<string>🇱🇻</string>
+	</array>
+	<key>Answers</key>
+	<array>
+		<string>U N I T E D   S T A T E S</string>
+		<string>U N I T E D   K I N G D O M</string>
+		<string>J A P A N</string>
+		<string>G E O R G I A</string>
+		<string>N E P A L</string>
+		<string>P A N A M A</string>
+		<string>E S T O N I A</string>
+		<string>A N G O L A</string>
+		<string>C Y P R U S</string>
+		<string>L A T V I A</string>
+	</array>
 </dict>
 </plist>
